@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2460BDF9-1232-46FF-B0D2-FE6131912841}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ForgeGame</RootNamespace>
+    <AssemblyName>ForgeGame</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\estol\Desktop\NightForgeInstaller\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>whip.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D840B3211139C25265672BBFE15B0F930EE07779</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ForgeGame_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Forms\DragonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DragonForm.Designer.cs">
+      <DependentUpon>DragonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PuppetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PuppetForm.Designer.cs">
+      <DependentUpon>PuppetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectDiceForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectDiceForm2.Designer.cs">
+      <DependentUpon>SelectDiceForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ForgeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ForgeForm.Designer.cs">
+      <DependentUpon>ForgeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SuccubusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SuccubusForm.Designer.cs">
+      <DependentUpon>SuccubusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectDiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectDiceForm.Designer.cs">
+      <DependentUpon>SelectDiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Board.cs" />
+    <Compile Include="Pages\CardPage.xaml.cs">
+      <DependentUpon>CardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CharacterSelect.xaml.cs">
+      <DependentUpon>CharacterSelect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FaceForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FaceForm3.Designer.cs">
+      <DependentUpon>FaceForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FaceForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FaceForm2.Designer.cs">
+      <DependentUpon>FaceForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FaceForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FaceForm1.Designer.cs">
+      <DependentUpon>FaceForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Forge.xaml.cs">
+      <DependentUpon>Forge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GetCard.xaml.cs">
+      <DependentUpon>GetCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HowTo.xaml.cs">
+      <DependentUpon>HowTo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Map.xaml.cs">
+      <DependentUpon>Map.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Title.xaml.cs">
+      <DependentUpon>Title.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\VictoryPage.xaml.cs">
+      <DependentUpon>VictoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewCards.xaml.cs">
+      <DependentUpon>ViewCards.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewDice.xaml.cs">
+      <DependentUpon>ViewDice.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Pages\CardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\CharacterSelect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Forge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Card.cs" />
+    <Compile Include="Models\Face.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\GetCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\HowTo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Map.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Title.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\VictoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ViewCards.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ViewDice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Forms\DragonForm.resx">
+      <DependentUpon>DragonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FaceForm3.resx">
+      <DependentUpon>FaceForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FaceForm2.resx">
+      <DependentUpon>FaceForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FaceForm1.resx">
+      <DependentUpon>FaceForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PuppetForm.resx">
+      <DependentUpon>PuppetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectDiceForm2.resx">
+      <DependentUpon>SelectDiceForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ForgeForm.resx">
+      <DependentUpon>ForgeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SuccubusForm.resx">
+      <DependentUpon>SuccubusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectDiceForm.resx">
+      <DependentUpon>SelectDiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ForgeGame_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\title.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\portrait\frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\bg_brick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\portrait\alucard.png" />
+    <Resource Include="images\portrait\charlotte.png" />
+    <Resource Include="images\portrait\maria.png" />
+    <Resource Include="images\portrait\shanoa.png" />
+    <Resource Include="images\portrait\simon.png" />
+    <Resource Include="images\portrait\soma.png" />
+    <Resource Include="images\portrait\sypha.png" />
+    <Resource Include="images\portrait\trevor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="whip.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\action\alucard.png" />
+    <Resource Include="images\action\charlotte.png" />
+    <Resource Include="images\action\maria.png" />
+    <Resource Include="images\action\shanoa.png" />
+    <Resource Include="images\action\simon.png" />
+    <Resource Include="images\action\soma.png" />
+    <Resource Include="images\action\sypha.png" />
+    <Resource Include="images\action\trevor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\bg\bg_alucard_cave.png" />
+    <Resource Include="images\bg\bg_bridge.png" />
+    <Resource Include="images\bg\bg_catacombs.png" />
+    <Resource Include="images\bg\bg_cave_entrance.png" />
+    <Resource Include="images\bg\bg_church.png" />
+    <Resource Include="images\bg\bg_clock.png" />
+    <Resource Include="images\bg\bg_cyclops.png" />
+    <Resource Include="images\bg\bg_forest.png" />
+    <Resource Include="images\bg\bg_keep.png" />
+    <Resource Include="images\bg\bg_marsh.png" />
+    <Resource Include="images\bg\bg_ship.png" />
+    <Resource Include="images\bg\bg_sunken_city.png" />
+    <Resource Include="images\bg\bg_tower.png" />
+    <Resource Include="images\bg\bg_underground_caverns.png" />
+    <Resource Include="images\bg\bg_village.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\cards\balore.png" />
+    <Resource Include="images\cards\carmilla.png" />
+    <Resource Include="images\cards\death.png" />
+    <Resource Include="images\cards\dracula.png" />
+    <Resource Include="images\cards\dragon.png" />
+    <Resource Include="images\cards\ghost.png" />
+    <Resource Include="images\cards\legion.png" />
+    <Resource Include="images\cards\medusa.png" />
+    <Resource Include="images\cards\minotaur.png" />
+    <Resource Include="images\cards\puppet_master.png" />
+    <Resource Include="images\cards\skeleton.png" />
+    <Resource Include="images\cards\succubus.png" />
+    <Resource Include="images\cards\s_g.png" />
+    <Resource Include="images\cards\werewolf.png" />
+    <Resource Include="images\cards\zapf_bat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\faces\all.png" />
+    <Resource Include="images\faces\choose2.png" />
+    <Resource Include="images\faces\choose3.png" />
+    <Resource Include="images\faces\crystal1.png" />
+    <Resource Include="images\faces\crystal2.png" />
+    <Resource Include="images\faces\ghc.png" />
+    <Resource Include="images\faces\gold1.png" />
+    <Resource Include="images\faces\gold3.png" />
+    <Resource Include="images\faces\gold4.png" />
+    <Resource Include="images\faces\gold6.png" />
+    <Resource Include="images\faces\goldcrystal.png" />
+    <Resource Include="images\faces\heart1.png" />
+    <Resource Include="images\faces\heart2.png" />
+    <Resource Include="images\faces\point2.png" />
+    <Resource Include="images\faces\point3.png" />
+    <Resource Include="images\faces\point4.png" />
+    <Resource Include="images\faces\pointcrystal.png" />
+    <Resource Include="images\faces\pointheart1.png" />
+    <Resource Include="images\faces\puppet.png" />
+    <Resource Include="images\faces\times3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\map_blur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\crystal.png" />
+    <Resource Include="images\gold.png" />
+    <Resource Include="images\heart.png" />
+    <Resource Include="images\point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\both.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\library.png" />
+    <Resource Include="images\library_2.png" />
+    <Resource Include="images\portal.png" />
+    <Resource Include="images\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\victory\alucard.png" />
+    <Resource Include="images\victory\charlotte.png" />
+    <Resource Include="images\victory\maria.png" />
+    <Resource Include="images\victory\shanoa.png" />
+    <Resource Include="images\victory\simon.png" />
+    <Resource Include="images\victory\soma.png" />
+    <Resource Include="images\victory\sypha.png" />
+    <Resource Include="images\victory\trevor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\idle\alucard.png" />
+    <Resource Include="images\idle\charlotte.png" />
+    <Resource Include="images\idle\maria.png" />
+    <Resource Include="images\idle\shanoa.png" />
+    <Resource Include="images\idle\simon.png" />
+    <Resource Include="images\idle\soma.png" />
+    <Resource Include="images\idle\sypha.png" />
+    <Resource Include="images\idle\trevor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\form\dragon.png" />
+    <Resource Include="images\form\puppet.png" />
+    <Resource Include="images\form\succubus_1.png" />
+    <Resource Include="images\form\succubus_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Audio\Music\0.mp3" />
+    <Content Include="Audio\Music\1.mp3" />
+    <Content Include="Audio\Music\10.mp3" />
+    <Content Include="Audio\Music\11.mp3" />
+    <Content Include="Audio\Music\12.mp3" />
+    <Content Include="Audio\Music\13.mp3" />
+    <Content Include="Audio\Music\14.mp3" />
+    <Content Include="Audio\Music\15.mp3" />
+    <Content Include="Audio\Music\16.mp3" />
+    <Content Include="Audio\Music\17.mp3" />
+    <Content Include="Audio\Music\18.mp3" />
+    <Content Include="Audio\Music\19.mp3" />
+    <Content Include="Audio\Music\2.mp3" />
+    <Content Include="Audio\Music\20.mp3" />
+    <Content Include="Audio\Music\21.mp3" />
+    <Content Include="Audio\Music\3.mp3" />
+    <Content Include="Audio\Music\4.mp3" />
+    <Content Include="Audio\Music\5.mp3" />
+    <Content Include="Audio\Music\6.mp3" />
+    <Content Include="Audio\Music\7.mp3" />
+    <Content Include="Audio\Music\8.mp3" />
+    <Content Include="Audio\Music\9.mp3" />
+    <Content Include="Audio\Music\guest.mp3" />
+    <Content Include="Audio\Music\intro.mp3" />
+    <Content Include="Audio\Music\win.mp3" />
+    <Content Include="Audio\Sounds\alucard.wav" />
+    <Content Include="Audio\Sounds\charlotte.wav" />
+    <Content Include="Audio\Sounds\maria.wav" />
+    <Content Include="Audio\Sounds\shanoa.wav" />
+    <Content Include="Audio\Sounds\simon.wav" />
+    <Content Include="Audio\Sounds\soma.wav" />
+    <Content Include="Audio\Sounds\sypha.wav" />
+    <Content Include="Audio\Sounds\trevor.wav" />
+    <Content Include="Audio\Sounds\_1.wav" />
+    <Content Include="Audio\Sounds\_2.wav" />
+    <Content Include="Audio\Sounds\_3.wav" />
+    <Content Include="Audio\Sounds\_4.wav" />
+    <Content Include="Audio\Sounds\_5.wav" />
+    <Content Include="Audio\Sounds\_6.wav" />
+    <Content Include="Audio\Sounds\_7.wav" />
+    <Content Include="Audio\Sounds\_8.wav" />
+    <Resource Include="images\btn_background.png" />
+    <Resource Include="images\hall.png" />
+    <Resource Include="images\monster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
