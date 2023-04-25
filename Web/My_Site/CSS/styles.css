@@ -1,0 +1,85 @@
+html,
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #231435;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2, h3 {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    color: #c65054;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+p,td, li, label, a, button {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: large;
+    color: whitesmoke;
+}
+
+footer {
+    text-align: center;
+    background-color: #c65054;
+}
+
+button {
+    background-color: #c65054;
+    height: 50px;
+    width: 200px;
+    margin: 80px;;
+    color: whitesmoke;
+}
+
+/*------ID Selectors------*/
+
+#ProfilePic {
+    height: 350px;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+/*------Class Selectors------*/
+
+.PageHeader {
+    background: url(../Images/desert_bg.jpg);
+    background-size:cover; 
+    padding: 0%;
+    color: whitesmoke;   
+    height: 100%;
+    width: 100%;
+    margin: 0px
+}
+
+.PageHeaderText {
+    text-align: right;
+    margin: 0px;
+    padding-top: 5%;
+    padding-right: 15%; 
+}
+
+.MainBody {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.Centered {
+    margin-left:auto; 
+    margin-right:auto;
+    padding: 0px;
+}
+
+.Divider {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
