@@ -1,0 +1,42 @@
+﻿<Page x:Class="ForgeGame.Pages.HowTo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ForgeGame.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="HowTo">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/ForgeGame;component/images/library_2.png"/>
+        </Grid.Background>
+        <TextBlock Name="TxtBlock" HorizontalAlignment="Left" Margin="265,320,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="650" Width="1390" FontFamily="Palatino Linotype" Background="#7F272727" Foreground="White" FontSize="24"/>
+        <Button Name="btn_objective" Content="Objective" HorizontalAlignment="Left" Margin="265,200,0,0" VerticalAlignment="Top" Width="300" FontFamily="Old English Text MT" Click="Btn_objective_Click" Height="95" FontSize="36" BorderBrush="{x:Null}" Foreground="White">
+            <Button.Background>
+                <ImageBrush ImageSource="../images/btn_background.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_dice" Content="Dice and dice faces" HorizontalAlignment="Left" Margin="995,200,0,0" VerticalAlignment="Top" Width="300" FontFamily="Old English Text MT" Click="Btn_dice_Click" Height="95" FontSize="36" BorderBrush="{x:Null}" Foreground="White">
+            <Button.Background>
+                <ImageBrush ImageSource="/ForgeGame;component/images/btn_background.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_currency" Content="Currency and Items" HorizontalAlignment="Left" Margin="635,200,0,0" VerticalAlignment="Top" Width="300" FontFamily="Old English Text MT" Click="Btn_currency_Click" Height="95" FontSize="36" BorderBrush="{x:Null}" Foreground="White">
+            <Button.Background>
+                <ImageBrush ImageSource="/ForgeGame;component/images/btn_background.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_cards" Content="Fiends and Abilities" HorizontalAlignment="Left" Margin="1355,200,0,0" VerticalAlignment="Top" Width="300" FontFamily="Old English Text MT" Click="Btn_cards_Click" Height="95" FontSize="36" BorderBrush="{x:Null}" Foreground="White">
+            <Button.Background>
+                <ImageBrush ImageSource="/ForgeGame;component/images/btn_background.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_back" Content="Back" HorizontalAlignment="Left" Margin="815,985,0,0" VerticalAlignment="Top" Width="300" FontFamily="Old English Text MT" Click="Btn_back_Click" Height="95" FontSize="36" BorderBrush="{x:Null}" Foreground="White">
+            <Button.Background>
+                <ImageBrush ImageSource="/ForgeGame;component/images/btn_background.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>

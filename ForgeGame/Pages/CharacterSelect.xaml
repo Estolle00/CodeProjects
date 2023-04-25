@@ -1,0 +1,69 @@
+﻿<Page x:Class="ForgeGame.CharacterSelect"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ForgeGame"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="CharacterSelect"
+      ShowsNavigationUI="False">
+    <Page.Background>
+        <ImageBrush ImageSource="../images/save.png"/>
+    </Page.Background>
+
+    <Grid Height="700" Width="1200">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Name="btn_Alucard" Content="Button" MouseEnter="ShowName" MouseLeave="ClearName" Grid.Row="0" Grid.Column="0" Margin="10" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Btn_Alucard_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="../images/portrait/alucard.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn_Trevor" Content="Button" MouseEnter="ShowName" MouseLeave="ClearName" Grid.Row="0" Grid.Column="1" Margin="10" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Btn_Trevor_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="../images/portrait/trevor.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn_Sypha" Content="Button" MouseEnter="ShowName" MouseLeave="ClearName" Grid.Row="0" Grid.Column="2" Margin="10" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Btn_Sypha_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="../images/portrait/sypha.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn_Soma" Content="Button" MouseEnter="ShowName" MouseLeave="ClearName" Grid.Row="0" Grid.Column="3" Margin="10" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Btn_Soma_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="../images/portrait/soma.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn_Maria" Content="Button" MouseEnter="ShowName" MouseLeave="ClearName" Grid.Row="1" Grid.Column="0" Margin="10" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Btn_Maria_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="../images/portrait/maria.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn_Shanoa" Content="Button" MouseEnter="ShowName" MouseLeave="ClearName" Grid.Row="1" Grid.Column="1" Margin="10" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Btn_Shanoa_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="../images/portrait/shanoa.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn_Simon" Content="Button" MouseEnter="ShowName" MouseLeave="ClearName" Grid.Row="1" Grid.Column="2" Margin="10" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Btn_Simon_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="../images/portrait/simon.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn_Charlotte" Content="Button" MouseEnter="ShowName" MouseLeave="ClearName" Grid.Row="1" Grid.Column="3" Margin="10" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Btn_Charlotte_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="../images/portrait/charlotte.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Label Name="lbl_player" HorizontalContentAlignment="Center" Content="Player 1, select a character" Height="100"  VerticalAlignment="Top" FontFamily="Old English Text MT" FontSize="56" Foreground="#FFDCD850" Grid.ColumnSpan="4" Margin="135,-150,145,0"/>
+        <Label Name="lbl_name" Grid.Column="1" HorizontalContentAlignment="Center" Margin="30,380,26,-130" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="544" Height="100" FontFamily="Old English Text MT" FontSize="56" Foreground="#FFDCD850"/>
+    </Grid>
+</Page>
