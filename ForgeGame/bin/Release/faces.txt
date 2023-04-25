@@ -1,0 +1,20 @@
+0;0;Gain 1 gold piece.;gold1.png
+1;0;Gain 2 hero points.;point2.png
+2;2;Gain 3 gold pieces.;gold3.png
+3;2;Gain 1 crystal.;crystal1.png
+4;3;Gain 4 gold pieces.;gold4.png
+5;3;Gain 1 heart.;heart1.png
+6;4;Gain 6 gold pieces.;gold6.png
+7;4;Gain 1 hero point AND 1 heart.;pointheart1.png
+8;4;Gain 2 gold pieces AND 1 crystal.;goldcrystal.png
+9;4;Receive 1 gold piece, 1 heart, OR 1 crystal.;choose3.png
+10;5;Receive 3 gold pieces OR 2 hero points.;choose2.png
+11;6;Gain 2 crystals.;crystal2.png
+12;8;Gain 2 hearts.;heart2.png
+13;8;Gain 3 hero points.;point3.png
+14;12;Receive 1 gold piece, 1 crystal, 1 heart, AND one point!;all.png
+15;12;Receive 2 gold pieces, 2 hearts, OR 2 crystals!;ghc.png
+16;12;Receive 4 hero points!;points4.png
+17;12;Receive 2 hero points AND 2 crystals!;pointcrystal.png
+18;0;Choose any face that your opponent has rolled. Collect that reward.;puppet.png
+19;0;Multiply the resources gained from your other dice by 3.;times3.png

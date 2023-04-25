@@ -1,0 +1,15 @@
+0;1;0;c;Ghost;A small spirit doomed to wander the land for all eternity.;Gain one gold piece each turn.;c;ghost.png;bg_village.png
+1;1;2;c;Zapf Bat;A greedy spirit given flesh through Dracula's cursed treasure horde.;Increase your maximum inventory by 5 gold, 3 hearts, and 3 crystals.;i;zapf_bat.png;bg_cave_entrance.png
+2;2;2;c;Slogra & Gaibon;The Grim Reaper's most trusted fiends, rarely are they seen apart.;No instant effect.You may roll one of your dice once more.;c;s_g.png;bg_ship.png
+3;3;6;c;Zombie Dragon;The remains of a dragon slain in ages past, it has become mindlessly violent.;No instant effect. On any turn, you may collect 2 hearts, 2 crystals, or 6 gold pieces. Discard after use.;c;dragon.png;bg_tower.png
+4;4;12;c;Legion;He is many, he is one.;No effect, only hero points for slaying this abomination.;i;legion.png;bg_catacombs.png
+5;5;4;c;Succubus;A demon that assumes the form of a beautiful woman to coerce mortals into relinquishing their life force.;Take a [x3] die face and immediately forge it onto one of your dice;i;succubus.png;bg_alucard_cave.png
+6;6;8;c;Carmilla;A once loyal follower of Dracula, blessed with vampiric powers from the dark lord himself.;Roll both of your dice TWICE and recieve their effects each time.;i;carmilla.png;bg_church.png
+7;1;0;h;Skeleton;An unlucky human's remains likely resurrected by a novice necromancer.;No instant effect. You may spend 3 gold pieces to gain 4 hero points.;c;skeleton.png;bg_marsh.png
+8;1;2;h;Werewolf;A cursed being, doomed to transform into a beast upon every full moon.;Gain 3 gold pieces and 3 crystals;i;werewolf.png;bg_forest.png
+9;2;4;h;Balore;An escaped giant, once imprisoned in the depths of the castle and forgotten.;No instant effect. Gain 1 gold piece, 1 heart, or 1 crystal;c;balore.png;bg_cyclops.png
+10;3;8;h;Minotaur;Half-man, half-bull, this guardian of the castle will hunt intruders to the ends of the earth.;All other players roll their dice, but do not apply the effects. Instead, any faces that would provide hero points will instead subtract them.;i;minotaur.png;bg_bridge.png
+11;4;14;h;Medusa;One of the three legendary Gorgon sisters, her gaze turns any who meet it to stone.;No effect, only hero points for ridding the world of her terror.;i;medusa.png;bg_sunken_city.png
+12;5;10;h;Puppet Master;The cursed king of dolls, left to torment prisoners of the castle.;Take a puppet face and immediately forge it onto one of your dice.;i;pm.png;bg_underground_caverns.png
+13;6;10;h;Death;Dracula's most trusted ally, a creature born of chaos, hatred, and fear.;Choose one of your die and roll it 4 times, receiving the effect each time.;i;death.png;bg_clock.png
+14;5;26;b;Dracula;The Lord of the Night, the most powerful vampire. He is able to reincarnate indefinetly, so long as there is darkness in the heart of man.; There is no greater reward than ridding the world of such evil...except hero points.;i;dracula.png;bg_keep.png
